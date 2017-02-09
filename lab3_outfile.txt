@@ -1,0 +1,406 @@
+MariaDB [adday]> source lab3_create.sql;
+Query OK, 0 rows affected (1.21 sec)
+
+Query OK, 0 rows affected (0.21 sec)
+
+Query OK, 0 rows affected (0.22 sec)
+
+Query OK, 0 rows affected (0.25 sec)
+
+Query OK, 0 rows affected (0.21 sec)
+
+Query OK, 0 rows affected (0.21 sec)
+
+Query OK, 0 rows affected (0.25 sec)
+
+Query OK, 0 rows affected (0.24 sec)
+
+Query OK, 0 rows affected (0.23 sec)
+
+Query OK, 0 rows affected (0.25 sec)
+
+Query OK, 0 rows affected (0.23 sec)
+
+Query OK, 0 rows affected (0.26 sec)
+
+Query OK, 0 rows affected (0.29 sec)
+
+Query OK, 0 rows affected (0.22 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+Query OK, 0 rows affected (0.18 sec)
+
+Query OK, 0 rows affected (0.24 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+MariaDB [adday]> source lab3_insert.sql;
+Query OK, 2 rows affected (0.02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+Query OK, 16 rows affected (0.13 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+Query OK, 32 rows affected (0.09 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+Query OK, 8 rows affected (0.05 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 18 rows affected, 4 warnings (0.06 sec)
+Records: 22  Duplicates: 4  Warnings: 4
+
+Query OK, 9 rows affected (0.05 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 28 rows affected (0.10 sec)
+Records: 28  Duplicates: 0  Warnings: 0
+
+Query OK, 3 rows affected, 24 warnings (0.03 sec)
+Records: 27  Duplicates: 24  Warnings: 24
+
+Query OK, 50 rows affected (0.03 sec)
+Records: 50  Duplicates: 0  Warnings: 0
+
+Query OK, 8 rows affected, 20 warnings (0.10 sec)
+Records: 28  Duplicates: 20  Warnings: 20
+
+Query OK, 28 rows affected (0.16 sec)
+Records: 28  Duplicates: 0  Warnings: 0
+
+Query OK, 5 rows affected, 44 warnings (0.03 sec)
+Records: 49  Duplicates: 44  Warnings: 44
+
+Query OK, 4 rows affected, 23 warnings (0.03 sec)
+Records: 27  Duplicates: 23  Warnings: 23
+
+Query OK, 27 rows affected (0.03 sec)
+Records: 27  Duplicates: 0  Warnings: 0
+
+Query OK, 122 rows affected (0.04 sec)
+Records: 122  Duplicates: 0  Warnings: 0
+
+Query OK, 9 rows affected (0.09 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 22 rows affected (0.09 sec)
+Records: 22  Duplicates: 0  Warnings: 0
+
+MariaDB [adday]> source lab3_queries.sql;
++------------+--------------------+--------------+-------+
+| name       | street             | city         | state |
++------------+--------------------+--------------+-------+
+| Main       | 42 South Main      | Fort Collins | CO    |
+| South Park | 4000 South College | Fort Collins | CO    |
++------------+--------------------+--------------+-------+
+2 rows in set (0.01 sec)
+
++-----------+------------+------+
+| shelf_num | lib_name   | flr  |
++-----------+------------+------+
+|         1 | Main       |    1 |
+|         2 | Main       |    1 |
+|         3 | Main       |    1 |
+|         4 | Main       |    1 |
+|         8 | Main       |    2 |
+|         7 | Main       |    2 |
+|         6 | Main       |    2 |
+|         5 | Main       |    2 |
+|         4 | South Park |    2 |
+|         3 | South Park |    2 |
+|         7 | South Park |    3 |
+|         8 | South Park |    3 |
++-----------+------------+------+
+12 rows in set (0.00 sec)
+
++-----------+------------+--------------+--------------+
+| shelf_num | lib_name   | ISBN         | total_copies |
++-----------+------------+--------------+--------------+
+|         1 | Main       | 964210310001 |            3 |
+|         8 | South Park | 964210310001 |            1 |
+|         1 | Main       | 964210310002 |            1 |
+|         8 | South Park | 964210310002 |            1 |
+|         1 | Main       | 964210310003 |            1 |
+|         8 | South Park | 964210310003 |            1 |
+|         8 | South Park | 964210310004 |            1 |
+|         2 | Main       | 964210310004 |            2 |
+|         8 | South Park | 964210310005 |            1 |
+|         2 | Main       | 964210310005 |            1 |
+|         8 | South Park | 964210310006 |            1 |
+|         2 | Main       | 964210310006 |            1 |
+|         7 | South Park | 964210310007 |            3 |
+|         3 | Main       | 964210310007 |            2 |
+|         7 | South Park | 964210310008 |            3 |
+|         3 | Main       | 964210310008 |            2 |
+|         7 | South Park | 964210310009 |            1 |
+|         3 | Main       | 964210310009 |            2 |
+|         7 | South Park | 964210310011 |            1 |
+|         4 | Main       | 964210310011 |            2 |
+|         7 | South Park | 964210310022 |            2 |
+|         4 | Main       | 964210310022 |            3 |
+|         7 | South Park | 964210310033 |            3 |
+|         4 | Main       | 964210310033 |            3 |
+|         5 | Main       | 964210310034 |            1 |
+|         4 | South Park | 964210310040 |            1 |
+|         5 | Main       | 964210310040 |            2 |
+|         4 | South Park | 964210310054 |            1 |
+|         5 | Main       | 964210310054 |            2 |
+|         4 | South Park | 964210310068 |            1 |
+|         6 | Main       | 964210310068 |            1 |
+|         6 | Main       | 964210310081 |            1 |
+|         4 | South Park | 964210310081 |            1 |
+|         4 | South Park | 964210310093 |            1 |
+|         6 | Main       | 964210310093 |            1 |
+|         6 | Main       | 964210310109 |            1 |
+|         4 | South Park | 964210310109 |            1 |
+|         4 | South Park | 964210310206 |            1 |
+|         7 | Main       | 964210310206 |            1 |
+|         7 | Main       | 964210310300 |            2 |
+|         4 | South Park | 964210310300 |            1 |
+|         7 | Main       | 964210310401 |            2 |
+|         3 | South Park | 964210310401 |            1 |
+|         7 | Main       | 964210310502 |            1 |
+|         3 | South Park | 964210310502 |            1 |
+|         8 | Main       | 964210310604 |            2 |
+|         8 | Main       | 964210310709 |            3 |
+|         8 | Main       | 964210310800 |            2 |
+|         8 | Main       | 964210310907 |            7 |
+|         3 | South Park | 964210310907 |            7 |
+|         3 | South Park | 964210311003 |            2 |
+|         8 | Main       | 964210311003 |            3 |
+|         3 | South Park | 964210311604 |            2 |
+|         3 | South Park | 964210311709 |            1 |
+|         3 | South Park | 964210311800 |            2 |
++-----------+------------+--------------+--------------+
+55 rows in set (0.00 sec)
+
++------------------------------+-----------+------------+
+| title                        | shelf_num | lib_name   |
++------------------------------+-----------+------------+
+| American Football            |         4 | Main       |
+| American Football            |         7 | South Park |
+| Challenging Puzzles          |         4 | Main       |
+| Challenging Puzzles          |         7 | South Park |
+| Cubs Win!                    |         8 | Main       |
+| Cubs Win!                    |         3 | South Park |
+| Database Theory              |         7 | South Park |
+| Database Theory              |         4 | Main       |
+| Downton Abbey                |         7 | South Park |
+| Downton Abbey                |         3 | Main       |
+| Eating Healthy               |         7 | Main       |
+| Eating Healthy               |         4 | South Park |
+| Escape from Gilligans Island |         4 | South Park |
+| Escape from Gilligans Island |         6 | Main       |
+| Fixing Computers             |         6 | Main       |
+| Fixing Computers             |         4 | South Park |
+| Gardening Tips               |         3 | South Park |
+| Gardening Tips               |         7 | Main       |
+| Hal Finds a Home             |         2 | Main       |
+| Hal Finds a Home             |         8 | South Park |
+| How to Digitally Sign        |         3 | Main       |
+| How to Digitally Sign        |         7 | South Park |
+| How to Grow Cucumbers        |         3 | South Park |
+| How to Grow Cucumbers        |         7 | Main       |
+| How to Grow Tomatoes         |         8 | South Park |
+| How to Grow Tomatoes         |         1 | Main       |
+| Lacey Discovers Herself      |         5 | Main       |
+| Lacey Discovers Herself      |         4 | South Park |
+| Last Train to Clarksville    |         2 | Main       |
+| Last Train to Clarksville    |         8 | South Park |
+| Missing Tomorrow             |         3 | South Park |
+| Missing Tomorrow             |         8 | Main       |
+| Mr. Ed                       |         4 | South Park |
+| Mr. Ed                       |         6 | Main       |
+| Mr. Smith Goes to Washington |         1 | Main       |
+| Mr. Smith Goes to Washington |         8 | South Park |
+| Red Burn                     |         4 | South Park |
+| Red Burn                     |         6 | Main       |
+| Sam Needs a Friend           |         3 | Main       |
+| Sam Needs a Friend           |         7 | South Park |
+| Studying is Your Friend      |         1 | Main       |
+| Studying is Your Friend      |         8 | South Park |
+| Taks McGrill                 |         4 | South Park |
+| Taks McGrill                 |         7 | Main       |
+| To Have and To Cherish       |         8 | South Park |
+| To Have and To Cherish       |         2 | Main       |
+| Where to Start               |         4 | South Park |
+| Where to Start               |         5 | Main       |
++------------------------------+-----------+------------+
+48 rows in set (0.00 sec)
+
++-----------+------------+-------------------+
+| shelf_num | lib_name   | SUM(total_copies) |
++-----------+------------+-------------------+
+|         1 | Main       |                 5 |
+|         2 | Main       |                 4 |
+|         3 | Main       |                 6 |
+|         4 | Main       |                 8 |
+|         5 | Main       |                 5 |
+|         6 | Main       |                 4 |
+|         7 | Main       |                 6 |
+|         8 | Main       |                17 |
+|         3 | South Park |                16 |
+|         4 | South Park |                 8 |
+|         7 | South Park |                13 |
+|         8 | South Park |                 6 |
++-----------+------------+-------------------+
+12 rows in set (0.00 sec)
+
++------------------------------+--------------------------------------------------+-----------+------------+
+| title                        | authors                                          | shelf_num | lib_name   |
++------------------------------+--------------------------------------------------+-----------+------------+
+| American Football            | Julie Barnes                                     |         7 | South Park |
+| Blue is Your Friend          | John Crichton,Barbara Wright                     |         3 | South Park |
+| Challenging Puzzles          | Roger Ramjet                                     |         4 | Main       |
+| Cubs Win!                    | Red Skelton,Barbara Wright                       |         3 | South Park |
+| Database Theory              | Dickey Betts,Waco Kid                            |         7 | South Park |
+| Downton Abbey                | Robert Crawley                                   |         7 | South Park |
+| Eating Healthy               | Dickey Betts,Waco Kid                            |         7 | Main       |
+| Eating in the Fort           | Thomas Magnum                                    |         3 | South Park |
+| Escape from Gilligans Island | Mickey Hart,Bobby Ewing                          |         4 | South Park |
+| European Football            | Julie Barnes                                     |         5 | Main       |
+| Fixing Computers             | Red Skelton                                      |         6 | Main       |
+| Gardening Tips               | Julie Barnes,Thomas Magnum                       |         7 | Main       |
+| Green Eggs                   | Aeon Flux,Thomas Magnum                          |         3 | South Park |
+| Green is Your Friend         | Barbara Wright,John Crichton                     |         8 | Main       |
+| Hal Finds a Home             | Mickey Hart                                      |         8 | South Park |
+| How to Digitally Sign        | Red Skelton,John Crichton                        |         7 | South Park |
+| How to Grow Cucumbers        | Bobby Ewing,Roger Ramjet                         |         3 | South Park |
+| How to Grow Tomatoes         | Waco Kid,Bobby Ewing                             |         1 | Main       |
+| Lacey Discovers Herself      | Julie Barnes,Thomas Magnum                       |         5 | Main       |
+| Last Train to Clarksville    | Bobby Ewing                                      |         8 | South Park |
+| Missing Tomorrow             | Mickey Hart,Perry Mason,Grace Slick,Dickey Betts |         8 | Main       |
+| Mr. Ed                       | Scottie Ferguson                                 |         6 | Main       |
+| Mr. Smith Goes to Washington | Red Skelton                                      |         1 | Main       |
+| Red Burn                     | Waco Kid,Robert Crawley                          |         6 | Main       |
+| Sam Needs a Friend           | Roger Thornhill,Barbara Wright,Scottie Ferguson  |         7 | South Park |
+| Studying is Your Friend      | Thomas Magnum,Roger Ramjet                       |         1 | Main       |
+| Taks McGrill                 | Scottie Ferguson,Barbara Wright                  |         4 | South Park |
+| To Have and To Cherish       | John Crichton,Robert Crawley,Roger Thornhill     |         8 | South Park |
+| Too Many Cooks               | Aeon Flux,Thomas Magnum                          |         8 | Main       |
+| Using the Library            | Thomas Magnum                                    |         8 | Main       |
+| Where to Start               | Roger Ramjet,Grace Slick                         |         5 | Main       |
++------------------------------+--------------------------------------------------+-----------+------------+
+31 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++----+------------+--------+---------------------+
+| id | table_name | action | date_time           |
++----+------------+--------+---------------------+
+|  1 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  2 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  3 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  4 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  5 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  6 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  7 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  8 | Author     | INSERT | 2016-07-02 14:41:01 |
+|  9 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 10 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 11 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 12 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 13 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 14 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 15 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 16 | Author     | INSERT | 2016-07-02 14:41:01 |
+| 17 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 18 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 19 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 20 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 21 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 22 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 23 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 24 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 25 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 26 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 27 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 28 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 29 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 30 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 31 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 32 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 33 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 34 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 35 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 36 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 37 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 38 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 39 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 40 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 41 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 42 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 43 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 44 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 45 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 46 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 47 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 48 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 49 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 50 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 51 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 52 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 53 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 54 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 55 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 56 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 57 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 58 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 59 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 60 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 61 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 62 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 63 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 64 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 65 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 66 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 67 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 68 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 69 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 70 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 71 | Stored_on  | INSERT | 2016-07-02 14:41:02 |
+| 72 | Stored_on  | INSERT | 2016-07-02 14:41:07 |
+| 73 | Stored_on  | UPDATE | 2016-07-02 14:41:07 |
+| 74 | Author     | INSERT | 2016-07-02 14:41:08 |
+| 75 | Stored_on  | INSERT | 2016-07-02 14:41:08 |
+| 76 | Stored_on  | DELETE | 2016-07-02 14:41:08 |
+| 77 | Stored_on  | UPDATE | 2016-07-02 14:41:08 |
++----+------------+--------+---------------------+
+77 rows in set (0.00 sec)
+
+MariaDB [adday]> notee
